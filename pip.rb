@@ -1,7 +1,7 @@
 require 'date'
 require 'cassandra'
 
-class Stat
+class Pip
 
   module ClassMethods
 

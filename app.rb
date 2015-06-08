@@ -1,9 +1,9 @@
 require 'sinatra'
-require './stat'
+require './pip'
 
 post '/pip' do
   label = params['label']
   value = params['value']
 
-  Stat.pip(label, value)
+  Pip.pip(label, value)
 end
