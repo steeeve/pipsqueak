@@ -1,5 +1,9 @@
 require 'sinatra'
+require './stat'
 
-get '/hi' do
-  "Hello World!"
+post '/pip' do
+  label = params['label']
+  value = params['value']
+
+  Stat.pip(label, value)
 end
